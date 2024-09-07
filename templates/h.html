@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Openings</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./assets/logo.png" alt="Logo" />
+        <div class="heading" id="nav-links"></div>
+      </nav>
+    </header>
+    <div class="hiring-div">
+      <img class="hiring-img" src="./assets/Hiring.png" alt="error" width="1500px"/>
+    </div>
+    <div class="container-1">
+<div><input type="checkbox" id="Graphical Designer" name="Graphical Designer" value="Graphical Designer">
+			<label for="Graphical Designer"> Graphical Designer</label></div>
+		<div><input type="checkbox" id="Frontend Designer" name="Frontend Designer" value="Frontend Designer">
+			<label for="Frontend Designer"> Frontend Designer</label></div>
+		<div><input type="checkbox" id="Backend Designer" name="Backend Designer" value="Backend Designer">
+			<label for="Backend Designer"> Backend Designer</label></div>
+</div>
+<div class="container-1">
+		<div><input type="checkbox" id="Cloud Knowledge" name="Cloud Knowledge" value="Cloud Knowledge">
+			<label for="Cloud Knowledge"> Cloud Knowledge</label></div>
+		<div><input type="checkbox" id="Typing Skills" name="Typing Skills" value="Typing Skills">
+			<label for="Typing Skills"> Typing Skills</label></div>
+		<div><input type="checkbox" id="Database Management" name="Database Management" value="Database Management">
+			<label for="Database Management"> Database Management</label></div>
+    </div>
+    <div class="container-7">
+      <div class="con7-text">
+        <h3>SEND US YOUR CV</h3>
+        <p>
+          We are looking for skilled person who is having relevant skills.<br />
+          Apply using the below link and also forward your CV<br />
+          to the provided contact details.
+        </p>
+<br>
+	<div class="rec">
+          <div class="info">
+            <img src="./assets/call.png" height="30px" widtg="30px" alt="" />&nbsp&nbsp<strong><b>  +91-120-416 4821
+            
+          </div><br>
+        <div class="info2">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./assets/mail.png" height="20px" width="30px" alt=""/>&nbsp&nbsp <strong><b>info@mangosorange.com         
+	 </div>
+        </div>
+      </div>
+<div class="container-7">
+      <div class="con7-text">
+        <button class="Apply">Apply Now</button>
+      </div>
+    </div>
+</div>
+<br><br>
+<div>
+<div class="container-8">
+  <footer>
+    <div class="footer-container" id="footer-content"></div>
+    <h3 class="follow">Follow US</h3>
+    <div class="footer-end">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+  </a>
+    </div>
+  </footer>
+  </div>
+</div>
+
+<script>
+  window.onload = function() {
+    const navLinks = [
+      { name: "Home", url: "home.html" },
+      { name: "About", url: "about.html" },
+      { name: "Services", url: "services.html" },
+      { name: "Staffing", url: "staffings.html" },
+      { name: "Opening", url: "h.html" },
+      { name: "Contact", url: "#" }
+    ];
+
+    const footerContent = [
+      {
+        title: "Quick Links",
+        content: ["Home", "About us", "Services", "Staffings", "Openings", "Contact us"]
+      },
+      {
+        title: "Services",
+        content: ["Infrastructure and Management", "Cloud Services", "Training Services", "Emerging Technology"]
+      },
+      {
+        title: "Contact",
+        content: ["Address", "Phone", "Email"]
+      }
+    ];
+
+    // For the navigation links
+    document.getElementById('nav-links').innerHTML = navLinks
+    .map(link => `<a href="${link.url}">${link.name}</a>`)
+    .join(' ');
+    // For the footer content
+    document.getElementById('footer-content').innerHTML = footerContent
+      .map(footer => `
+        <div class="footer-column">
+          <h3>${footer.title}</h3>
+          <ul>${footer.content.map(item => `<li>${item}</li>`).join(' ')}</ul>
+        </div>
+      `)
+      .join('');
+  };
+</script>
+</body>
+</html>
