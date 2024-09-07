@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 61, 53);
+            font-family: algeriya;
+        }
+        .reg{
+          color: yellow;
+          font-family: algeriya;
+          justify-content: center;
+          margin-left: 47%;
+          font-size: 50;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px yellow;
+            padding: 20px;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            font-family: algeriya;
+            color: yellow;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid yellow;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            background-color: yellow;
+            color: black;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration:wavy;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+       .btn:hover{
+        color: black;
+        background-color: yellowgreen;
+       }
+        a{
+            display: flex;
+            justify-content:last baseline;
+            color: yellow;
+            text-decoration: none; 
+            font-weight: Bold;                          ;
+
+        }
+        a:hover{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class = "back"><a href="home.html">&lt;Back</a></div>
+    <div class="reg">Registration</div>
+    <div class="container">
+    <label for="name">FullName</label>
+    <input type="text" class="name" placeholder="Ex:abc" required>
+    <label for="Email">Email</label>
+    <input type="email" class="email" placeholder="Ex:abc@gmail.com" required>
+    <label for="Mobile">Mobile</label>
+    <input type="text" class="mobile" placeholder="Ex:9876543210" >
+    <label for="password">password</label>
+    <input type="password" class="password" placeholder="Ex:abc@12" required>
+    <label for="repass">Verify Password</label>
+    <input type="password" class="password1" placeholder="Ex:abc@12" required>
+    <input type="button" value="Register" class="btn"><br>
+    </div>
+</body>
+</html>
