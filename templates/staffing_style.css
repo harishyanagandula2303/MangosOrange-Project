@@ -112,21 +112,12 @@ nav ul li a.active {
   height: auto;
   margin-right: 0px;
 }
-
-
 .solutions-text {
   margin-left:50px;
-  
- 
-
 }
-
-
-
 .learn-more-button {
   margin-top: 20px;
-  text-align: center;
-  
+  text-align: center; 
 }
 
 .learn-more-button a {
@@ -137,11 +128,8 @@ nav ul li a.active {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  color:white;
-
-  
+  color:white; 
 }
-
 .solution1 {
   flex-direction: column;
   text-align: center;
@@ -162,17 +150,12 @@ nav ul li a.active {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
-  
-
 }
 .text-overlay {
   margin-left: -600px;
   color: black;
-  margin-top: 100px;
-  
+  margin-top: 100px; 
 }
-
-
 .social-media {
   text-align: center;
 }
@@ -244,8 +227,6 @@ footer{
 .footer-end img {
   height: 30px;
 }
-
-/* Adjustments for list in footer */
 .list {
   margin-top: 0;
 }
