@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staffing</title>
+    <link rel="stylesheet" href="staffing_style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="Company Logo">
+    </div>
+    
+    <nav>
+        <div class="heading" id="nav-links"></div>
+      </nav>
+            <!-- Navigation links will be populated here -->
+            
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="flex">
+                <div class="intro-content">
+                    <h2>What is Staffing</h2>
+                </div>
+                <div class="intro1">
+                    <p>Staffing is an operation of recruiting employees by evaluating their skills and knowledge</p> 
+                       <p> before offering them specific job roles accordingly.</p>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="assets/Staffing-image.png" alt="Staffing Image">
+            </div>
+        </section>
+
+        <section class="staffing-solutions">
+            <div class="solutions-content">
+                <div class="solutions-image">
+                    <img src="assets/staffing1.png" alt="Staffing Solutions Image">
+                </div>
+                <div class="solutions-text">
+                    <h2>Staffing Solutions Company</h2>
+                    <ul>
+                        <li><img src="assets/star1.png" width="30" height="40" alt="Small Image">&nbsp;Permanent and Temporary staffing solutions.</li>
+                        <li><img src="assets/star1.png" width="30" height="40" alt="Small Image">&nbsp;Get a continuous supply of quality talent from an experienced team of recruiters.</li>
+                        <li><img src="assets/star1.png" width="30" height="40" alt="Small Image">&nbsp;19+ years of experience in the HR industry.</li>
+                        <li><img src="assets/star1.png" width="30" height="40" alt="Small Image">&nbsp;PAN India presence.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="solution1">
+            <h2 class="solutions-header">Our Solutions</h2>
+        </div>
+        <div class="solution-top">
+            <div><img src="assets/card1.png" width="350" height="250" alt="Deep Tech AI"></div>
+            <div class="text-overlay">Deep Tech AI</div>
+            <div><img src="assets/card1.png" width="350" height="250" alt="Geographic Information Systems"></div>
+            <div class="text-overlay"><p>Geographic Information</p>
+                <p>Systems</p></div>
+        </div>
+        <div class="solution-bottom">
+            <div><img src="assets/card1.png" width="350" height="250" alt="AI and ML Training"></div>
+            <div class="text-overlay">AI and ML Training</div>
+            <div><img src="assets/card1.png" width="350" height="250" alt="Business Management Solutions"></div>
+            <div class="text-overlay"><p>Business Management</p>
+                <p> Solutions</p></div>
+        </div>
+
+        <div class="buttondiv">
+            <button class="button"><a href="learn_more.html">Learn More</a></button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container" id="footer-content">
+            <!-- Footer content will be populated by JavaScript -->
+        </div>
+        <div class="footer-end">
+            <h3>Follow US</h3>
+            <div class="footer-end">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="./assets/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="./assets/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="./assets/yt.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="./assets/li.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = [
+                { name: "Home", url: "home.html" },
+                { name: "About", url: "about.html" },
+                { name: "Services", url: "services.html" },
+                { name: "Staffing", url: "staffing.html" },
+                { name: "Learn More", url: "learn_more.html" },
+                { name: "Contact", url: "contact.html" }
+            ];
+           
+            const footerContent = [
+                {
+                    title: "Quick Links",
+                    content: ["Home", "About", "Services", "Staffing", "Learn More", "Contact"]
+                },
+                {
+                    title: "Services",
+                    content: ["Infrastructure and Management", "Cloud Services", "Training Services", "Emerging Technology"]
+                },
+                {
+                    title: "Contact",
+                    content: ["Address", "Phone", "Email"]
+                }
+            ];
+
+            // For the navigation links
+            document.getElementById('nav-links').innerHTML = navLinks
+                .map(link => `<a href="${link.url}">${link.name}</a>`)
+                .join(' ');
+            
+            // For the footer content
+            document.getElementById('footer-content').innerHTML = footerContent
+                .map(footer => `
+                    <div class="footer-column">
+                        <h3>${footer.title}</h3>
+                        <ul>${footer.content.map(item => `<li>${item}</li>`).join(' ')}</ul>
+                    </div>
+                `)
+                .join('');
+        });
+    </script>
+    
+</body>
+</html>

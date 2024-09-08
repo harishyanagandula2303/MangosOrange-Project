@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="learn_more_style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+        <div class="heading" id="nav-links">
+            <!-- Navigation links will be populated by JavaScript -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="assets/card3.png" alt="Deep Tech AI">
+                    <div class="text-overlay">
+                        <h3>Deep Tech AI</h3>
+                    </div>
+                    <div class="text1">
+                        <p><img src="assets/star1.png" width="30" height="40">AIaaS</p>
+                        <p><img src="assets/star1.png" width="30" height="40">RaaS</p>
+                        <p><img src="assets/star1.png" width="30" height="40">Data as a Service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="assets/card3.png" alt="Geographic Information Systems">
+                    <div class="text-overlay">
+                        <h3><p>Geographic Information</p>
+                            <p> Systems</p></h3>
+                    </div>
+                    <div class="text2">
+                        <p><img src="assets/star1.png" width="30" height="40">Map/Geo Visualization</p>
+                        <p><img src="assets/star1.png" width="30" height="40">Technology Improvements</p>
+                        <p><img src="assets/star1.png" width="30" height="40">Advanced Spatial Capabilities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="assets/card3.png" alt="AI and ML Training">
+                    <div class="text-overlay">
+                        <h3>AI and ML Training</h3>
+                    </div>
+                    <div class="text3">
+                        <p><img src="assets/star1.png" width="30" height="40">Rapid Models</p>
+                        <p><img src="assets/star1.png" width="30" height="40">Custom Model</p>
+                        <p><img src="assets/star1.png" width="30" height="40">API & SDK Provider Set</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="assets/card3.png" alt="Business Management">
+                    <div class="text-overlay">
+                        <h3>Business Management</h3>
+                    </div>
+                    <div class="text4">
+                        <p><img src="assets/star1.png" width="30" height="40">Executive Search</p>
+                        <p><img src="assets/star1.png" width="30" height="40">Talent Staffing</p>
+                        <p><img src="assets/star1.png" width="30" height="40">Customer Relationship Management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container" id="footer-content">
+            <!-- Footer content will be populated by JavaScript -->
+        </div>
+        <div class="footer-end">
+            <h3>Follow US</h3>
+            <div class="footer-end">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="./assets/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="./assets/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="./assets/yt.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="./assets/li.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = [
+                { name: "Home", url: "home.html" },
+                { name: "About", url: "about.html" },
+                { name: "Services", url: "services.html" },
+                { name: "Staffing", url: "staffing.html" },
+                { name: "Learn More", url: "learn_more.html" },
+                { name: "Contact", url: "contact.html" }
+            ];
+
+            const footerContent = [
+                {
+                    title: "Quick Links",
+                    content: ["Home", "About", "Services", "Staffing", "Learn More", "Contact"]
+                },
+                {
+                    title: "Services",
+                    content: ["Infrastructure and Management", "Cloud Services", "Training Services", "Emerging Technology"]
+                },
+                {
+                    title: "Contact",
+                    content: ["Address", "Phone", "Email"]
+                }
+            ];
+
+            // For the navigation links
+            document.getElementById('nav-links').innerHTML = navLinks
+                .map(link => `<a href="${link.url}">${link.name}</a>`)
+                .join(' ');
+
+            // For the footer content
+            document.getElementById('footer-content').innerHTML = footerContent
+                .map(footer => `
+                    <div class="footer-column">
+                        <h3>${footer.title}</h3>
+                        <ul>${footer.content.map(item => `<li>${item}</li>`).join(' ')}</ul>
+                    </div>
+                `)
+                .join('');
+        });
+    </script>
+</body>
+</html>
