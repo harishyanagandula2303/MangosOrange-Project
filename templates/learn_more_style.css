@@ -1,10 +1,9 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #003D35;
-  color: #ffffff;
 }
 
 header {
@@ -13,7 +12,7 @@ header {
   align-items: center;
   background-color: #003D35;
   padding: 10px 20px;
-  position: relative; /* Ensure proper stacking of sticky class */
+  position: relative; 
 }
 
 .heading{
@@ -66,7 +65,7 @@ nav ul li a.active {
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
-  position: relative; /* To position text-overlay absolutely */
+  position: relative; 
 }
 
 .service-content {
@@ -82,12 +81,8 @@ nav ul li a.active {
 .text-overlay {
   margin-left: -300px;
   color:yellowgreen;
-  margin-top: -40px;
-  
+  margin-top: -40px;  
 }
-
-
-
 .text1 {
   margin-left: 250px;
   margin-top: -40px;
@@ -104,8 +99,6 @@ nav ul li a.active {
   margin-left: 160px;
   margin-top: -20px;
 }
-
-/* Footer */
 footer{
   background-color: yellow;
   padding: 30px 20px;
@@ -145,8 +138,6 @@ footer{
 .footer-end img {
   height: 30px;
 }
-
-/* Adjustments for list in footer */
 .list {
   margin-top: 0;
 }
